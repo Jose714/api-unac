@@ -3,13 +3,13 @@
   "version": "1.0.0",
   "description": "",
   "main": "./src/app.ts",
+
   "scripts": {
-    "start": "node dist ./src/app.ts",
-    "postinstall": "tsc",
-    "watch-node": "nodemon dist ./src/app.ts",
-    "watch-ts": "tsc - w ",
-    " deploy ": " git add. && git commit -m Heroku && git push heroku master "
+    "start": "ts-node dist/app.js",
+    "build": "tsc -p .",
+    "dev": "ts-node-dev --respawn --transpile-only ./src/app.ts"
   },
+
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -38,5 +38,13 @@
     "reflect-metadata": "^0.1.13",
     "ts-node": "^9.1.1",
     "typeorm": "^0.2.32"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jose714/api-unac.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Jose714/api-unac/issues"
+  },
+  "homepage": "https://github.com/Jose714/api-unac#readme"
 }
